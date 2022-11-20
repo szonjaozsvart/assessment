@@ -9,10 +9,12 @@ function Header() {
       backgroundColor="#9CC3D5FF"
       alignItems="center"
       justifyContent="center"
-      borderRadius={2}
     >
-      <Typography sx={{fontWeight:"bold", fontSize:"large", color:"#1769aa"}} margin={3}>
-      NO MORE DRAMA - LLAMA WITH TRANSLATING NUMBERS AGAIN!
+      <Typography
+        sx={{ fontWeight: "bold", fontSize: "large", color: "#1769aa" }}
+        margin={3}
+      >
+        NO MORE DRAMA - LLAMA WITH TRANSLATING NUMBERS AGAIN!
       </Typography>
     </Grid>
   );

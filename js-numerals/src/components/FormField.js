@@ -1,15 +1,7 @@
 import TextField from '@mui/material/TextField';
 import { InputAdornment } from '@mui/material';
 
-export default function FormField({
-  name,
-  color,
-  type,
-  label,
-  icon,
-  value,
-  onChange,
-}) {
+export default function FormField({ name, color, type, label, icon, value, onChange,}) {
   return (
     <div data-testid="formField" className="form-control">
       <TextField
