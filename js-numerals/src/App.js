@@ -61,14 +61,14 @@ function App() {
         ))}
       </ImageList>
       <Grid
-        backgroundColor="#9CC3D5FF"
+        backgroundColor="#C2B280"
         align="center"
         justifyContent="center"
         minHeight={250}
       >
         <br />
-        <Typography variant="h4" component="span" margin={3} color="primary">
-          The number, you would like to convert to words is..
+        <Typography variant="h4" component="span" margin={3} color="primary" fontWeight="bold">
+          The number, you would like to convert is..
         </Typography>
         <Container align="center" maxWidth="xs">
           {showError && (
@@ -108,7 +108,7 @@ function App() {
           </Typography>
         </Container>
         {!result ? null : (
-          <Typography color="primary" variant="h5" padding={1}>
+          <Typography color="primary" variant="h5" padding={1} fontWeight="bold">
             The desired answer is {result} !
           </Typography>
         )}

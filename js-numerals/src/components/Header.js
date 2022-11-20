@@ -6,12 +6,12 @@ function Header() {
   return (
     <Grid
       display="flex"
-      backgroundColor="#9CC3D5FF"
+      backgroundColor="#1769AA"
       alignItems="center"
       justifyContent="center"
     >
       <Typography
-        sx={{ fontWeight: "bold", fontSize: "large", color: "#1769aa" }}
+        sx={{ fontWeight: "bold", fontSize: "large", color: "#C2B280" }}
         margin={3}
       >
         NO MORE DRAMA - LLAMA WITH TRANSLATING NUMBERS AGAIN!

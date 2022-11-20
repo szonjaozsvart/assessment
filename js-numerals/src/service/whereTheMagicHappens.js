@@ -33,4 +33,4 @@ function whereTheMagicHappens(givenNumber) {
   return words
 }
 
-export default whereTheMagicHappens;
+module.exports = whereTheMagicHappens;
