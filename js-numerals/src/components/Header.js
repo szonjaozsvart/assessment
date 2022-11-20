@@ -9,12 +9,14 @@ function Header() {
       backgroundColor="#1769AA"
       alignItems="center"
       justifyContent="center"
+      padding={3}
     >
       <Typography
-        sx={{ fontWeight: "bold", fontSize: "large", color: "#C2B280" }}
-        margin={3}
+        align="center"
+        variant="h5"
+        sx={{ fontWeight: "bold", color: "#C2B280" }}
       >
-        NO MORE DRAMA - LLAMA WITH TRANSLATING NUMBERS AGAIN!
+        NO MORE DRAMA - LLAMA WITH CONVERTING NUMBERS AGAIN !
       </Typography>
     </Grid>
   );

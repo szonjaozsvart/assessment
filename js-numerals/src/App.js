@@ -13,7 +13,6 @@ import ImageListItem from "@mui/material/ImageListItem";
 import Header from "./components/Header";
 import FormField from "./components/FormField";
 import whereTheMagicHappens from "./service/whereTheMagicHappens";
-import "./App.css";
 
 function App() {
   const [givenNumber, setGivenNumber] = useState("");
@@ -38,7 +37,8 @@ function App() {
       if (
         givenNumber[i] === "-" ||
         givenNumber[i] === "." ||
-        givenNumber[i] === ","
+        givenNumber[i] === "," ||
+        givenNumber[i] === "e"
       ) {
         setShowError(true);
         setErrorMessage("Please insert only numbers into the field!");
@@ -51,7 +51,7 @@ function App() {
   };
 
   return (
-    <Grid>
+    <Grid align="center">
       <Header />
       <ImageList variant="masonry" cols={4} gap={5}>
         {itemData.map((item) => (
@@ -64,10 +64,18 @@ function App() {
         backgroundColor="#C2B280"
         align="center"
         justifyContent="center"
+        borderRadius={3}
         minHeight={250}
+        maxWidth={1400}
       >
         <br />
-        <Typography variant="h4" component="span" margin={3} color="primary" fontWeight="bold">
+        <Typography
+          align="center"
+          variant="h4"
+          component="span"
+          color="primary"
+          fontWeight="bold"
+        >
           The number, you would like to convert is..
         </Typography>
         <Container align="center" maxWidth="xs">
@@ -108,7 +116,12 @@ function App() {
           </Typography>
         </Container>
         {!result ? null : (
-          <Typography color="primary" variant="h5" padding={1} fontWeight="bold">
+          <Typography
+            color="primary"
+            variant="h5"
+            padding={1}
+            fontWeight="bold"
+          >
             The desired answer is {result} !
           </Typography>
         )}
